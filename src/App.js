@@ -3,7 +3,7 @@ import "./App.css";
 import Header from "./components/common/header";
 function App() {
   return (
-    <div className="App">
+    <div className="container-fluid">
       <Header />
     </div>
   );

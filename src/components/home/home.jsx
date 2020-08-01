@@ -1,5 +1,9 @@
-// import React from "react";
+import React from "react";
 
 export default function Home() {
-  return "hady";
+  return (
+    <div className="">
+      <h1 className="text-center">Mohamed Abdelhady Elshamy</h1>
+    </div>
+  );
 }

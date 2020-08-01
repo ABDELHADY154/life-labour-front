@@ -1,0 +1,11 @@
+.HEADER {
+  background-color: transparent !important;
+}
+.navLink :hover {
+  color: red !important;
+}
+/* @media only screen and (max-width: 600px) {
+  .HEADER {
+    background-color: black !important;
+  }
+} */
