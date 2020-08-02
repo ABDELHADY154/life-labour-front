@@ -5,7 +5,7 @@ import LOGO from "../../assets/logo2.png";
 export default function Footer() {
   return (
     <nav class="navbar navbar-dark bg-dark footer">
-      <a class="navbar-brand ml-4" href="#">
+      <a class="navbar-brand ml-4" href="/">
         <img src={LOGO} width="100" height="25" alt="" loading="lazy" />
       </a>
       <ul className="nav justify-content-center text-center mr-auto navUl">

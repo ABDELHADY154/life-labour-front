@@ -14,16 +14,28 @@ export default class persons extends React.Component {
   render() {
     return (
       <div>
-        <h1 className="text-center">About</h1>
-        {this.state.persons.map(persons => (
-          <ul>
-            <li>{persons.id}</li>
-            <li>{persons.name}</li>
-            <li>{persons.email}</li>
+        <table className="table table-dark">
+          <thead>
+            <tr>
+              <th scope="col">#id</th>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">City</th>
+            </tr>
+          </thead>
+          <tbody>
+            {this.state.persons.map(persons => (
+              <tr>
+                <td>{persons.id}</td>
+                <td>{persons.name}</td>
+                <td>{persons.email}</td>
 
-            <li>{persons.address.city}</li>
-          </ul>
-        ))}
+                <td>{persons.address.city}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        <br />
       </div>
     );
   }
