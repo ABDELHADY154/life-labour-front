@@ -1,11 +1,46 @@
 .HEADER {
   background-color: transparent !important;
 }
-.navLink :hover {
-  color: red !important;
+.navLinkItem :hover {
+  color: #ffd966 !important;
 }
-/* @media only screen and (max-width: 600px) {
-  .HEADER {
-    background-color: black !important;
+.active {
+  color: #ffd966 !important;
+  border-bottom: 2px solid #ffd966;
+}
+
+.loginNavLink {
+  color: black !important;
+}
+
+.loginNavLink {
+  text-decoration: none !important;
+}
+.loginNavLink:hover {
+  color: #ffd966 !important;
+}
+
+.getStartedButton:hover {
+  /* border: outset yellow; */
+
+  background-color: #ffd966 !important;
+}
+
+.footer {
+  height: 12vh !important;
+  width: 100% !important;
+  background-color: black !important;
+}
+
+@media only screen and (min-width: 600px) {
+  .navLinkItemFooter {
+    margin-top: 1%;
+    color: white !important;
   }
-} */
+  .navLinkItemFooter:hover {
+    color: #ffd966 !important;
+  }
+  .navUl {
+    margin-left: 27vw;
+  }
+}

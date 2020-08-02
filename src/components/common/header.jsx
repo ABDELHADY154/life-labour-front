@@ -20,47 +20,62 @@ export default function Header() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a class="navbar-brand ml-4" href="/">
-            <img src={LOGO} width="100" height="30" alt="" loading="lazy" />
+          <a className="navbar-brand ml-4" href="/">
+            <img src={LOGO} width="100" height="25" alt="" loading="lazy" />
           </a>
           <ul className="navbar-nav mr-auto mt-2 mt-lg-0 ml-5">
             <li
               className={
                 window.location.pathname === "/"
-                  ? "nav-item mr-3 active"
-                  : "nav-item mr-3"
+                  ? "nav-item mr-3 navLinkItem active"
+                  : "nav-item mr-3 navLinkItem"
               }
             >
-              <Link to="/" className="nav-link">
+              <a href="/" className="nav-link navLinkItem">
+                {/* <Link to="/" className="nav-link"> */}
                 Home
-              </Link>
+                {/* </Link> */}
+              </a>
             </li>
             <li
               className={
                 window.location.pathname === "/about"
-                  ? "nav-item mr-3  active"
-                  : "nav-item mr-3 "
+                  ? "nav-item mr-3 navLinkItem active"
+                  : "nav-item mr-3 navLinkItem"
               }
             >
-              <Link to="/about" className="nav-link">
+              <a href="/about" className="nav-link NAVLINK">
+                {/* <Link to="/about" className="nav-link"> */}
                 About
+                {/* </Link> */}
+              </a>
+            </li>
+            <li className="nav-item mr-3 navLinkItem">
+              <Link to="/jobs" className="nav-link navLinkItem">
+                Jobs
               </Link>
-              {/* {Route.isActive("myRoute", {param1: "te"}) ? 'active' : ''} */}
             </li>
-            <li className="nav-item mr-3">
-              <Link to="/jobs" className="nav-link"></Link>
-            </li>
-            <li className="nav-item mr-3">
-              <Link to="/blog" className="nav-link">
+            <li className="nav-item mr-3 navLinkItem">
+              <Link to="/blog" className="nav-link navLinkItem">
                 Blog
               </Link>
             </li>
-            <li className="nav-item mr-3">
-              <Link to="/pricing" className="nav-link">
+            <li className="nav-item mr-3 navLinkItem">
+              <Link to="/pricing" className="nav-link navLinkItem">
                 Pricing
               </Link>
             </li>
           </ul>
+          <div className="my-2_my-lg-0">
+            {/* <li className=" navLinkItem"> */}
+            <a href="/login" className="mr-3 loginNavLink">
+              Sign in
+            </a>
+
+            <a href="/" className="btn btn-warning rounded-0 getStartedButton">
+              Get Started
+            </a>
+          </div>
         </div>
       </nav>
 

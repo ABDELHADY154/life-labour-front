@@ -1,11 +1,15 @@
 import React from "react";
 import "./App.css";
 import Header from "./components/common/header";
+import Footer from "./components/common/footer";
 function App() {
   return (
-    <div className="container-fluid">
-      <Header />
-    </div>
+    <React.Fragment>
+      <div className="container-fluid">
+        <Header />
+      </div>
+      <Footer />
+    </React.Fragment>
   );
 }
 
