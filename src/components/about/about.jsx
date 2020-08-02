@@ -14,8 +14,8 @@ export default class persons extends React.Component {
   render() {
     return (
       <div>
-        <table className="table table-dark">
-          <thead>
+        <table className="table">
+          <thead className="thead-dark">
             <tr>
               <th scope="col">#id</th>
               <th scope="col">Name</th>
